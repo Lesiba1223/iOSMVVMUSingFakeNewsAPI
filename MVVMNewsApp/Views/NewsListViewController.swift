@@ -31,6 +31,7 @@ class NewsListViewController: UIViewController {
             
             if let articles = articles{
                 self.articleVM = ArticlesViewModel(articles: articles)
+                
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -57,9 +58,11 @@ extension NewsListViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let storyboard = storyboard!.instantiateViewController(identifier: "NewsDetailsViewController") as? NewsDetailsViewController else { return }
+        let storyboard = storyboard?.instantiateViewController(identifier: "NewsDetailsViewController") as? NewsDetailsViewController
+        storyboard?.titleLbl = articleVM.articleAtIndex(indexPath.row).title
+        storyboard?.descriptionLbl = articleVM.articleAtIndex(indexPath.row).description
+        navigationController?.pushViewController(storyboard!, animated: true)
         
-        navigationController?.pushViewController(storyboard, animated: true)
     }
 }
 
