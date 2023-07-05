@@ -94,8 +94,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0v-r7-TmZ">
-                                <rect key="frame" x="8" y="140.33333333333334" width="377" height="20.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0v-r7-TmZ">
+                                <rect key="frame" x="46.666666666666657" y="140.33333333333334" width="300" height="20.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ZBl-LF-r1W"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,14 +114,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YoN-7k-wJm" firstAttribute="leading" secondItem="wA2-j7-XgV" secondAttribute="leading" constant="8" id="AYQ-j2-mWN"/>
+                            <constraint firstItem="Z0v-r7-TmZ" firstAttribute="centerX" secondItem="wA2-j7-XgV" secondAttribute="centerX" id="KLQ-Gy-xgn"/>
                             <constraint firstItem="0OF-zG-dNt" firstAttribute="top" secondItem="YoN-7k-wJm" secondAttribute="bottom" constant="8" id="MgU-FG-HHD"/>
                             <constraint firstItem="wA2-j7-XgV" firstAttribute="trailing" secondItem="0OF-zG-dNt" secondAttribute="trailing" constant="8" id="Shp-Qr-BKa"/>
+                            <constraint firstItem="Z0v-r7-TmZ" firstAttribute="top" secondItem="0OF-zG-dNt" secondAttribute="bottom" constant="8" id="XMc-pe-bKq"/>
                             <constraint firstItem="wA2-j7-XgV" firstAttribute="trailing" secondItem="YoN-7k-wJm" secondAttribute="trailing" constant="8" id="ckE-nf-Soy"/>
-                            <constraint firstItem="Z0v-r7-TmZ" firstAttribute="top" secondItem="0OF-zG-dNt" secondAttribute="bottom" constant="8" id="iL6-dm-CIs"/>
                             <constraint firstItem="0OF-zG-dNt" firstAttribute="leading" secondItem="wA2-j7-XgV" secondAttribute="leading" constant="8" id="pXw-Eb-ybb"/>
                             <constraint firstItem="YoN-7k-wJm" firstAttribute="top" secondItem="wA2-j7-XgV" secondAttribute="top" constant="8" id="qjw-2w-Hkn"/>
-                            <constraint firstItem="Z0v-r7-TmZ" firstAttribute="leading" secondItem="wA2-j7-XgV" secondAttribute="leading" constant="8" id="rm7-2q-0a3"/>
-                            <constraint firstItem="wA2-j7-XgV" firstAttribute="trailing" secondItem="Z0v-r7-TmZ" secondAttribute="trailing" constant="8" id="sBW-CR-tlz"/>
                         </constraints>
                     </view>
                     <connections>
